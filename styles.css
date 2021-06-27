@@ -1,0 +1,83 @@
+body {
+  background: rgb(24, 22, 22);
+  margin: 0;
+  color: rgb(199, 199, 199);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.showcase::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  background-image: url("antonio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.showcase:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  transition: 1000ms;
+  margin-top: 105px;
+  margin-left: -130px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+.content .logo {
+  height: 180px;
+  width: 200px;
+}
+.content .title {
+  font-size: 36px;
+  color: black;
+  margin-top: 16px;
+}
+.content .text {
+  line-height: 1.7;
+  margin-top: 16px;
+  color: black;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 70px 16px;
+}
+.column-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.center {
+  text-align: center;
+  margin: auto;
+}
+footer {
+  padding: 35px;
+}
+footer p {
+  margin: 0;
+}
+.black {
+  color: black;
+}
+.about {
+  background-color: aliceblue;
+}
+.fa-address-card {
+  color: black;
+}
