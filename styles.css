@@ -81,3 +81,12 @@ footer p {
 .fa-address-card {
   color: black;
 }
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
