@@ -1,2 +1,2 @@
-# blur-website
-https://gokcinosman.github.io/blur-website/
+# blurry-website
+https://gokcinosman.github.io/blurry-website/
